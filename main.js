@@ -14,3 +14,29 @@ function pwdValidate() {
 		return null;
 	}
 }
+
+function prevSlide() {
+	let pictures = ["img/image0.png", "img/image1.jpg", "img/image2.png", "img/image3.png", "img/image4.png"];
+	let imgCurrent = document.getElementById('show');
+	let posCurrent = pictures.indexOf((imgCurrent.src).substr(-14));
+	if (posCurrent == 0) {
+		imgCurrent.src = pictures[4];
+	}
+	else {
+		posCurrent = posCurrent - 1;
+		imgCurrent.src = pictures[posCurrent];
+	}
+}
+
+function nextSlide() {
+	let pictures = ["img/image0.png", "img/image1.jpg", "img/image2.png", "img/image3.png", "img/image4.png"];
+	let imgCurrent = document.getElementById('show');
+	let posCurrent = pictures.indexOf(imgCurrent.src.substr(-14));
+	if (posCurrent == 4) {
+		imgCurrent.src = pictures[0];
+	}
+	else {
+		posCurrent = posCurrent + 1;
+		imgCurrent.src = pictures[posCurrent];
+	}
+}
