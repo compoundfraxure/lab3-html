@@ -5,7 +5,14 @@
 
 .imgSide {
 	float: right;
+	transition-duration: 0.25s;
 }
+
+.imgSide:hover {
+	width: 50%;
+	transition-duration: 0.25s;
+}
+
 h1 {
 	background-color: crimson;
 	color: white;
