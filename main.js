@@ -40,3 +40,21 @@ function nextSlide() {
 		imgCurrent.src = pictures[posCurrent];
 	}
 }
+
+function restyle() {
+	let borderColor = [];
+	let backgroundColor = [];
+	let borderWidth = document.getElementById("borderWidth").value;
+	
+	borderColor[0] = document.getElementById("borderRed").value;
+	borderColor[1] = document.getElementById("borderGreen").value;
+	borderColor[2] = document.getElementById("borderBlue").value;
+	
+	backgroundColor[0] = document.getElementById("backgroundRed").value;
+	backgroundColor[1] = document.getElementById("backgroundGreen").value;
+	backgroundColor[2] = document.getElementById("backgroundBlue").value;
+	
+	document.getElementById("modifiable").style.borderWidth = "" + borderWidth + "px";
+	document.getElementById("modifiable").style.borderColor = "rgb(" + borderColor[0] + ", " + borderColor[1] + ", " + borderColor[2] + ")";
+	document.getElementById("modifiable").style.backgroundColor = "rgb(" + backgroundColor[0] + ", " + backgroundColor[1] + ", " + backgroundColor[2] + ")";
+}
