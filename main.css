@@ -1,0 +1,47 @@
+
+.imgMain {
+	float: right;
+}
+
+.imgSide {
+	float: right;
+}
+h1 {
+	background-color: crimson;
+	color: white;
+	border-width: 3px;
+	border-color: white;
+	border-style: solid;
+}
+
+body {
+	background-color: ghostwhite;
+	font-family: sans-serif;
+}
+
+h2 {
+	color: dodgerblue;
+}
+
+li {
+	font-size: 18pt;
+}
+
+p {
+	color: royalblue;
+}
+
+p.info {
+	color: darkred;
+	border-style: solid;
+	border-color: white;
+	border-width: 3px;
+}
+
+a {
+	text-shadow: 1px 1px black;
+}
+
+ul {
+	background-image: url(img/background.jpg);
+}
