@@ -16,7 +16,7 @@ function pwdValidate() {
 }
 
 function prevSlide() {
-	let pictures = ["img/image0.png", "img/image1.jpg", "img/image2.png", "img/image3.png", "img/image4.png"];
+	let pictures = ["img/image0.png", "img/image1.png", "img/image2.jpg", "img/image3.jpg", "img/image4.gif"];
 	let imgCurrent = document.getElementById('show');
 	let posCurrent = pictures.indexOf((imgCurrent.src).substr(-14));
 	if (posCurrent == 0) {
@@ -29,7 +29,7 @@ function prevSlide() {
 }
 
 function nextSlide() {
-	let pictures = ["img/image0.png", "img/image1.jpg", "img/image2.png", "img/image3.png", "img/image4.png"];
+	let pictures = ["img/image0.png", "img/image1.png", "img/image2.jpg", "img/image3.jpg", "img/image4.gif"];
 	let imgCurrent = document.getElementById('show');
 	let posCurrent = pictures.indexOf(imgCurrent.src.substr(-14));
 	if (posCurrent == 4) {
